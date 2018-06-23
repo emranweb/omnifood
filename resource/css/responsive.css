@@ -1,0 +1,181 @@
+/* Media Query for small laptop under 1200 */
+
+@media only screen and (max-width:1200px) {}
+
+/* Media Query for big tablet under 991*/
+
+@media only screen and (max-width:991px) {
+  /*------body---------*/
+  body {
+    font-size: 18px;
+  }
+  /*------section---------*/
+  .section {
+    padding: 60px 0px;
+  }
+  /*------section text---------*/
+  .section-text {
+    width: 80%;
+    margin-left: 10%;
+  }
+  /*--------------*/
+  .main-nav li {
+    display: inline-block;
+    margin-left: 15px;
+  }
+  /*--------------*/
+  .work__left img {
+    width: 50%;
+  }
+  .work__right {
+    margin-top: 30px;
+  }
+  .work-list li {
+    margin-bottom: 30px;
+  }
+  .work-list li:last-of-type {
+    margin-bottom: 40px;
+  }
+  .work-list li span {
+    margin-bottom: 20px;
+  }
+  .app-btn img {
+    margin-right: 2px;
+  }
+  /*--------------*/
+  .cities-area .box h3 {
+    font-size: 1em;
+  }
+  .city-feature {
+    font-size: .8em;
+  }
+  /*--------------*/
+  .plan-box {
+    width: 100%;
+    margin: 0;
+  }
+  .price {
+    font-size: 2em;
+  }
+  .price-monthly {
+    font-size: .8em;
+    margin-top: 15px;
+  }
+  .details ul li {
+    font-size: .9em;
+  }
+  /*--------------*/
+  .contract-form {
+    width: 100%;
+  }
+}
+
+/* Media Query for mobile and small tablet under 767*/
+
+@media only screen and (max-width:767px) {
+  /*--------------*/
+  .main-nav {
+    display: none;
+    float: left;
+    margin-top: 25px;
+  }
+  /*------////--------*/
+  .main-nav li {
+    display: block;
+    margin-left: 0;
+  }
+  /*------///--------*/
+  .main-nav li a:link,
+  .main-nav li a:visited {
+    display: block;
+    font-size: .9em;
+    border: 0;
+  }
+  /*------///--------*/
+  .sticky .mobile-icon {
+    margin-top: 10px;
+  }
+  /*------///--------*/
+  .sticky .mobile-icon i {
+    color: #555;
+  }
+  /*------///--------*/
+  .sticky .main-nav li a:link,
+  .sticky .main-nav li a:visited {
+    padding: 10px 0px;
+  }
+  /*------///--------*/
+  .mobile-icon {
+    display: inline-block;
+  }
+  /*------///--------*/
+  .hero__text-box h1 {
+    font-size: 2em;
+  }
+  .section-text {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .section-feature .box {
+    margin-top: 20px;
+  }
+  .work__left {
+    text-align: center;
+  }
+  .cities-area .box h3 {
+    font-size: 1.5em;
+  }
+  .city-feature {
+    font-size: 1.2em;
+  }
+  .plan-box {
+    margin-top: 30px;
+  }
+  /*------///--------*/
+  input,
+  select {
+    margin-top: 10px;
+  }
+  .right__nav {
+    float: none;
+  }
+  /*------///--------*/
+  footer {
+    padding: 20px;
+  }
+  .copy {
+    margin-top: 15px;
+  }
+  /*------///--------*/
+  .section-form {
+    position: relative;
+    background: #ffffffd6;
+    width: 100%;
+    padding: 40px 0px;
+    height: auto;
+  }
+  .map-box {
+    height: auto;
+  }
+  .map {
+    height: 400px;
+  }
+}
+
+/* Media Query for Mobile under 560px*/
+
+@media only screen and (max-width:560px) {
+  /*------///--------*/
+  .logo {
+    height: 70px;
+  }
+  /*------///--------*/
+  .hero__text-box h1 {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+  }
+  /*------///--------*/
+  .btn {
+    margin-top: 10px;
+  }
+}

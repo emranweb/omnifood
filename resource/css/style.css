@@ -1,0 +1,787 @@
+/*******************************************************************/
+
+/* Basic Setup*/
+
+/*******************************************************************/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+html {
+  background-color: #fff;
+  color: #555;
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+}
+
+/*--- Clearfix------*/
+
+.clearfix {
+  zoom: 1;
+}
+
+/*--- Clearfix------*/
+
+.clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*******************************************************************/
+
+/* Reusedable Component*/
+
+/*******************************************************************/
+
+/*---------- Section ----------*/
+
+section {
+  padding: 80px 0px;
+}
+
+/*------- Default link--------*/
+
+a:link,
+a:visited {
+  color: #e67e22;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #e67e22;
+  -webkit-transition: border-bottom .2s;
+  transition: border-bottom .2s;
+}
+
+/*-------- Default hover--------*/
+
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
+}
+
+/*-------- Heading--------*/
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+/*----------  H1 ----------*/
+
+h1 {
+  margin: 0px;
+  color: #fff;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  word-spacing: 4px;
+}
+
+/*----------  H2 ----------*/
+
+h2 {
+  font-size: 1.5em;
+  word-spacing: 3px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2:after {
+  content: "";
+  width: 100px;
+  display: block;
+  height: 2px;
+  background: #e67e22;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+/*----------  H3 ----------*/
+
+h3 {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  letter-spacing: 0px;
+}
+
+/*----------  box ----------*/
+
+.box {
+  padding: 1%;
+}
+
+/*----------  box text----------*/
+
+.box p {
+  font-size: 80%;
+  line-height: 1.5em;
+}
+
+/*----------  box Icon----------*/
+
+.box i {
+  color: #e67e22;
+  display: block;
+  margin-bottom: 15px;
+}
+
+/*----------  Paragraph ----------*/
+
+.section-text {
+  width: 70%;
+  margin-left: 15%;
+  line-height: 1.5em;
+}
+
+/*---------- Normal Button ----------*/
+
+.btn:link,
+.btn:visited,
+button {
+  display: inline-block;
+  padding: 10px 30px;
+  text-decoration: none;
+  border-radius: 200px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+/*---------- Button With Full Background----------*/
+
+.btn-full:link,
+.btn-full:visited,
+button {
+  background-color: #e67e22;
+  color: #fff;
+  margin-right: 15px;
+}
+
+/*---------- Button with Border----------*/
+
+.btn-gost:link,
+.btn-gost:visited {
+  border: 1px solid #e67e22;
+  color: #e67e22;
+}
+
+/*---------- Button Hover Effect ----------*/
+
+.btn:hover,
+.btn:active,
+button:hover,
+button:active {
+  background: #cf6d17;
+}
+
+.btn-gost:hover,
+.btn-gost:active {
+  border: 1px solid #e67e22;
+  color: #fff;
+}
+
+/*******************************************************************/
+
+/* Header area*/
+
+/*******************************************************************/
+
+/*---------- Header ----------*/
+
+header {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../img/hero-min.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero-min.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/*---------- hero area ----------*/
+
+.hero__text-box {
+  position: absolute;
+  width: 90%;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/*---------- logo ----------*/
+
+.logo,
+.logo-black {
+  height: 100px;
+  width: auto;
+  margin-top: 20px;
+}
+
+.logo-black {
+  display: none;
+  height: 50px;
+  margin: 5px 0px;
+}
+
+/*---------- Main Nav ----------*/
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin: 0px;
+  margin-top: 60px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding: 8px 0px;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #e67e22;
+}
+
+/*------Mobile Icon-------*/
+
+.mobile-icon {
+  cursor: pointer;
+  margin-top: 30px;
+  display: none;
+  float: right;
+}
+
+.mobile-icon i {
+  font-size: 2em;
+  color: #fff;
+}
+
+/*-------Sticky nav-------*/
+
+.sticky {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.98);
+  -webkit-box-shadow: 0px 2px 2px #efefef;
+  box-shadow: 0px 2px 2px #efefef;
+  z-index: 9999;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  color: #555;
+  padding: 21px 0px;
+}
+
+.sticky .logo {
+  display: none;
+}
+
+.sticky .logo-black {
+  display: block;
+}
+
+.sticky .main-nav {
+  margin-top: 16px;
+}
+
+/*******************************************************************/
+
+/* section feature*/
+
+/*******************************************************************/
+
+.section-feature .section-text {
+  margin-bottom: 50px;
+}
+
+/*******************************************************************/
+
+/* Section Meal Showcase*/
+
+/*******************************************************************/
+
+/*-------showcase---------*/
+
+.section-showcase {
+  padding: 0px;
+}
+
+/*-------Meal showcase---------*/
+
+.meal-showcase {
+  list-style: none;
+  margin: 0px;
+  width: 100%;
+}
+
+.meal-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+/*-------Meal Phone---------*/
+
+.meal-photo {
+  width: 100%;
+  margin: 0px;
+  line-height: 0px;
+  overflow: hidden;
+  background: #000;
+}
+
+.meal-photo img {
+  opacity: 0.6;
+  width: 100%;
+  height: auto;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: opacity .5s, -webkit-transform .5s;
+  transition: opacity .5s, -webkit-transform .5s;
+  transition: transform .5s, opacity .5s;
+  transition: transform .5s, opacity .5s, -webkit-transform .5s;
+}
+
+/*-------Meal Hover---------*/
+
+.meal-photo img:hover {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+/*******************************************************************/
+
+/* Section Work*/
+
+/*******************************************************************/
+
+.section-work {
+  background: #f4f4f4;
+}
+
+/*-------Left work area---------*/
+
+.work__left {
+  text-align: right;
+  padding-right: 3%;
+  margin-top: 30px;
+}
+
+.work__left img {
+  width: 40%;
+}
+
+/*-------Righ Work---------*/
+
+.work__right {
+  padding-left: 3%;
+  margin-top: 70px;
+}
+
+.work-list {
+  list-style: none;
+  margin: 0px;
+}
+
+.work-list li {
+  margin-bottom: 50px;
+}
+
+.work-list li:last-of-type {
+  margin-bottom: 80px;
+}
+
+.work-list li span {
+  width: 40px;
+  height: 40px;
+  margin-right: 25px;
+  border: 2px solid #e67e22;
+  color: #e67e22;
+  border-radius: 50%;
+  text-align: center;
+  float: left;
+  padding: 7px;
+}
+
+.app-btn:link,
+.app-btn:visited {
+  border: 0;
+}
+
+.app-btn img {
+  height: 50px;
+  width: auto;
+  margin-right: 20px;
+}
+
+/*******************************************************************/
+
+/* Cities area*/
+
+/*******************************************************************/
+
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.city-feature i {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+/*******************************************************************/
+
+/* Testimonail area*/
+
+/*******************************************************************/
+
+.section-testimonial {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.80)), to(rgba(0, 0, 0, 0.80))), url(../img/back-customers-min.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url(../img/back-customers-min.jpg);
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed;
+}
+
+/*-------Block Queto--------*/
+
+blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 1.5em;
+  font-size: .8em;
+  position: relative;
+  margin-top: 30px;
+}
+
+/*---------------*/
+
+blockquote:before {
+  content: "\201C";
+  font-size: 4em;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+/*---------------*/
+
+cite {
+  font-size: .8em;
+  margin-top: 25px;
+  display: block;
+}
+
+/*---------------*/
+
+cite img {
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/*******************************************************************/
+
+/* Sign up area*/
+
+/*******************************************************************/
+
+.section-sign-up {
+  background: #f4f4f4;
+}
+
+/*---------------*/
+
+.plan-box {
+  background: #fff;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 5%;
+  -webkit-box-shadow: 0 2px 2px #e4e4e4;
+  box-shadow: 0 2px 2px #e4e4e4;
+}
+
+/*---------------*/
+
+.plan-box div {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 15px;
+}
+
+/*---------------*/
+
+.plan-box div:first-child {
+  border: none;
+  background: #ebebeb;
+}
+
+/*---------------*/
+
+.plan-box div:last-child {
+  border: none;
+}
+
+/*---------------*/
+
+.price {
+  font-size: 3em;
+  margin-top: 10px;
+  color: #e67e22;
+}
+
+.price span {
+  font-size: .4em;
+  font-weight: 300;
+}
+
+/*---------------*/
+
+.price-monthly {
+  font-size: 1em;
+  margin-top: 15px;
+}
+
+.details ul {
+  list-style: none;
+  margin: 0px;
+}
+
+.details ul li {
+  padding: 5px 0px;
+}
+
+.details ul li i {
+  margin-right: 10px;
+  color: #e67e22;
+}
+
+/*---------------*/
+
+.btn-group {
+  text-align: center;
+}
+
+/*******************************************************************/
+
+/* Sign up area*/
+
+/*******************************************************************/
+
+.contract-form {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*---------------*/
+
+label {
+  font-size: .9em;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 3px;
+  font-size: .8em;
+  border: 1px solid #ccc;
+}
+
+/*---------------*/
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+/*---------------*/
+
+.m {
+  margin: 15px 0px;
+}
+
+/*---------------*/
+
+.map {
+  width: 100%;
+  height: 650px;
+  z-index: 0;
+}
+/*---------------*/
+.map-box {
+  width: 100%;
+  height: 650px;
+  position: relative;
+}
+
+/*---------------*/
+
+.section-form {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  background: #ffffffd6;
+  z-index: 10;
+  width: 50%;
+  padding: 40px 0px;
+  height: 650px;
+}
+
+/*******************************************************************/
+
+/* Sign up area*/
+
+/*******************************************************************/
+
+footer {
+  background-color: #333;
+  padding: 40px;
+}
+
+/*---------------*/
+
+.left__nav {
+  list-style: none;
+  float: left;
+  margin: 0px;
+}
+
+/*---------------*/
+
+.left__nav li {
+  display: inline-block;
+  margin: 10px 10px;
+}
+
+/*---------------*/
+
+.right__nav {
+  list-style: none;
+  float: right;
+  margin: 0px;
+}
+
+/*---------------*/
+
+.right__nav li {
+  display: inline-block;
+  margin: 10px;
+}
+
+/*---------------*/
+
+.left__nav li a:link,
+.left__nav li a:visited,
+.right__nav li a:link,
+.right__nav li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+  font-size: .9em;
+}
+
+/*---------------*/
+
+.left__nav li a:hover,
+.left__nav li a:active {
+  color: #ddd;
+}
+
+/*---------------*/
+
+.fa-facebook-f,
+.fa-twitter,
+.fa-google-plus-g,
+.fa-instagram {
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+/*---------------*/
+
+.fa-facebook-f:hover {
+  color: #3b5999
+}
+
+.fa-twitter:hover {
+  color: #55acee;
+}
+
+.fa-google-plus-g:hover {
+  color: #dd4b39;
+}
+
+.fa-instagram:hover {
+  color: #e4405f;
+}
+
+/*---------------*/
+
+.copy {
+  color: #888;
+  text-align: center;
+  font-size: .8em;
+  width: 100%;
+  margin-top: 40px;
+}
+
+/*******************************************************************/
+
+/* Animatin*/
+
+/*******************************************************************/
+
+.js-wp-1,
+.js-wp-2,
+.js-wp-3,
+  {
+  opacity: 0;
+}
+
+/*---------------*/
+
+.js-wp-1.animated,
+.js-wp-2.animated,
+.js-wp-3.animated,
+.js-wp-4.animated {
+  opacity: 1;
+}
+
