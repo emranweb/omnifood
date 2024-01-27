@@ -1,10 +1,10 @@
 # Omnifood
-omnifood is professional website for a food restaurant. The is a my complete web design project. The project start from a online course.
-This is my web design project that cover almost all of the area. 
+Omnifood is a professional website for a food restaurant. This is my complete web design project. The project starts from an online course.
+This is my web design project that covers almost all of the area. 
 
-## Area that Cover in this project
+## Area that Covers in this project
 * Basic HTML CSS
-* CSS Animaton and Some Cool feature.
+* CSS animation and Some Cool features.
 * Add Favicon Icon
 * Responsive Design with Media Query
 * Responsive Mobile Nav
@@ -15,7 +15,8 @@ This is my web design project that cover almost all of the area.
 * Google analytics
 * Upload in Web Hosting 
 
- [Website Link ](http://emranweb.com/project/omnifood/)
+<img width="1679" alt="omnifood" src="https://github.com/emranweb/omnifood/assets/5980298/c28b7743-6f8f-4abd-a401-a8b9d38fee37">
+
 
 Thanks
 
